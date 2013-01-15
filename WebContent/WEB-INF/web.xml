@@ -18,4 +18,23 @@
   	<servlet-name>primeiraServlet</servlet-name>
   	<url-pattern>*.jsf</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>addContato</servlet-name>
+  	<servlet-class>br.caelum.clauvane.servlet.AdicionarContatoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addContato</servlet-name>
+  	<url-pattern>/contato</url-pattern>
+  </servlet-mapping>
+  
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/404.html</location>
+  </error-page>
+  <error-page>
+  	<exception-type>java.lang.Exception</exception-type>
+  	<location>/erro.html</location>
+  </error-page>
+  
 </web-app>
